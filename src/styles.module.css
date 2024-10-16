@@ -1,0 +1,508 @@
+/* Frame structure */
+.frame {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%;  */
+  width: 1920px; /* Maximum width for large screens */
+  height: 1197px; /* Height for large screens */
+  position: relative; /* Relative positioning for absolute children */
+  gap: 0px; /* No gap between elements */
+  border-radius: 50px 50px; /* Rounded top corners */
+  border: 1px solid rgb(96, 47, 206); /* Border */
+  opacity: 1; /* Fully visible */
+  position: relative;
+  background: linear-gradient(
+      313.91deg,
+      rgba(36, 74, 206, 0.08) 0.29%,
+      rgba(85, 52, 206, 0.08) 57.13%,
+      rgba(121, 36, 206, 0.08) 98.46%
+    ),
+    linear-gradient(360deg, #ffffff 0%, rgba(255, 255, 255, 0) 96.45%);
+}
+
+/* Cross Button */
+.crossButton {
+  position: absolute; /* Position absolutely within the parent */
+  width: 55px; /* Outer button width */
+  height: 59px; /* Outer button height */
+  top: 14px; /* Distance from the top */
+  right: 30px; /* Align to the right */
+  padding: 10px 8px; /* Padding */
+  gap: 10px; /* Gap for spacing */
+  opacity: 1; /* Fully visible */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: transparent; /* Transparent background */
+  /* border: 1px solid black;  */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+/* Inner Box */
+.innerBox {
+  width: 44px; /* Icon width */
+  height: 44px; /* Icon height */
+  /* border: 1px solid rgb(0, 0, 0);  */
+  position: relative; /* Relative positioning for inner elements */
+  transform: rotate(45deg); /* Tilt the box by 45 degrees */
+  display: flex; /* Use flexbox to center the SVG */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+/* leftPanel */
+.leftPanel {
+  /* max-width: fit-content; */
+  width: 871px; /* Specified width */
+  height: 754px; /* Specified height */
+  position: absolute; /* Absolute positioning */
+  top: 243px; /* Position from the top */
+  left: 122px; /* Position from the left */
+  gap: 0px; /* No gap between children */
+  opacity: 1; /* Fully visible */
+  border: none; /* No visible border */
+  /* border-style: solid;  */
+  /* border-color: rgba(19, 18, 18, 1);  */
+  background-color: transparent;
+  z-index: 1;
+}
+
+.ellipse {
+  width: 830px; /* Width of the ellipse */
+  height: 238px; /* Height of the ellipse */
+  position: absolute; /* Absolute positioning for correct placement */
+  top: 407px; /* Position from the top of the left panel */
+  left: 41px;
+  border-radius: 50%; /* Make the shape an ellipse */
+  border: 3px solid rgba(19, 18, 18, 1); /* Border for the ellipse */
+  background-color: transparent; /* Transparent background */
+  z-index: 1; /* Lower z-index to place it behind the image */
+
+  /* Clip-path to cut off the top part */
+  /* clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 20% 30%, 30% 80%, 40% 0%, 0% 0%); */
+  clip-path: polygon(0% 12%, 100% 12%, 100% 100%, 0% 100%);
+}
+
+.tabstyle {
+  background-color: transparent;
+  width: 761px;
+  height: 761px;
+  position: relative;
+  top: -94px;
+  left: -44px;
+  bottom: -22px;
+  /* right: 758px; */
+  gap: 0px; /* No gap */
+  opacity: 1; /* Fully visible */
+  /* Rotate the image by -180 degrees */
+  z-index: 2; /* Higher z-index to ensure it's above the ellipse */
+}
+
+.featuredButtons {
+  width: 768px; /* Width of the featured buttons box */
+  height: 72px; /* Height of the featured buttons box */
+  position: absolute; /* Absolute positioning */
+  top: 699px; /* Position from the top */
+  left: 67px; /* Position from the left */
+  gap: 44px; /* Gap between buttons */
+  display: flex; /* Use flexbox for alignment */
+  opacity: 1; /* Make it fully visible */
+  z-index: 3; /* Ensure it is above the ellipse */
+}
+
+.featuredButton {
+  cursor: pointer;
+  width: 72px; /* Fixed width of each button */
+  height: 72px; /* Fixed height of each button */
+  padding: 15px 11px; /* Padding inside the button */
+  border-radius: 18px; /* Rounded corners */
+  border: 1.5px solid rgb(96, 47, 206);
+  background: transparent; /* Background color */
+  /* Gradient border */
+  opacity: 1; /* Make it fully visible */
+}
+
+.threeDBtn {
+  width: 48.63px; /* Width of the button */
+  height: 42px; /* Height of the button */
+  gap: 0; /* No gap */
+  opacity: 1; /* Make the button visible */
+  background: transparent; /* Background color */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: opacity 0.3s; /* Smooth opacity transition */
+}
+.scalingImg {
+  width: 32.3px;
+  height: 42px;
+  gap: 0; /* No gap */
+  opacity: 1; /* Make the button visible */
+  background: transparent; /* Background color */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+.locationBtn {
+  width: 42px;
+  height: 42px;
+  gap: 0; /* No gap */
+  opacity: 1; /* Make the button visible */
+  background: transparent; /* Background color */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+.playBtn {
+  width: 42px;
+  height: 42px;
+  gap: 0; /* No gap */
+  opacity: 1; /* Make the button visible */
+  background: transparent; /* Background color */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.middleContainer {
+  position: absolute;
+  top: 88px; /* Adjust based on the correct position */
+  left: 1004px; /* Adjust based on the correct position */
+  width: 149px; /* Fixed width */
+  height: 410px; /* Hug height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px; /* Gap between buttons */
+  opacity: 1; /* Fully visible */
+}
+.middleButton {
+  width: 149px; /* Fixed width */
+  height: 60px; /* Adjusted height */
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1.5px solid rgb(96, 47, 206);
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+.viewInARbtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.topBtnStyleDiv {
+  width: 149px; /* Fill width */
+  height: 122px; /* Fixed height */
+  display: flex; /* Use flex to align content */
+  flex-direction: column; /* Stack children vertically */
+  gap: 34px; /* Space between items */
+  opacity: 1;
+  align-items: center;
+}
+/* AR Button Section */
+.viewInAR {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 1; /* Fully visible */
+  border: 1.5px solid rgb(96, 47, 206);
+}
+
+.arIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 44.68px;
+  height: 44.68px;
+  top: 14.04px;
+  left: 52.8px;
+}
+
+.viewInARText {
+  word-break: break-word;
+  width: 100%; /* Use full width of the parent container */
+  text-align: center; /* Center the text */
+  margin-top: 8px; /* Space between the AR icon and text */
+  opacity: 1; /* Fully visible */
+  font-family: "Be Vietnam Pro", sans-serif; /* Ensure correct font */
+  font-size: 16px; /* Font size as specified */
+  font-weight: 500; /* Medium weight */
+  line-height: 20px; /* Line height as specified */
+}
+
+/* Button Container */
+.buttonContDiv {
+  display: flex; /* Aligns buttons in a row */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 24px; /* Space between buttons */
+  align-items: center;
+  justify-content: center;
+}
+
+.middlelowerButton {
+  width: 72px; /* Fixed width for buttons */
+  height: 72px; /* Adjust height based on your design */
+  border-radius: 8px; /* Rounded corners */
+  background-color: transparent; /* Background color */
+  border: 1.5px solid rgb(96, 47, 206); /* Border styling */
+  border-radius: 50%;
+  display: flex; /* Use flexbox to center icon and text */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Zoom Icon Specific Styles */
+.zoomIcon {
+  width: 32px; /* Adjust icon size as per your Figma design */
+  height: 32px; /* Adjust icon size as per your Figma design */
+}
+.zoomOutIcon {
+  width: 32px; /* Adjust icon size as per your Figma design */
+  height: 32px; /* Adjust icon size as per your Figma design */
+}
+.screnIcon {
+  width: 32px; /* Adjust icon size as per your Figma design */
+  height: 32px; /* Adjust icon size as per your Figma design */
+}
+
+/* rightPanel */
+.rightPanel {
+  width: 599px; /* Fixed width for the RightPanel */
+  height: 1075px; /* Fixed height */
+  position: absolute; /* Absolute positioning */
+  top: 80px; /* Position from the top */
+  left: 1242px; /* Position from the left */
+  opacity: 1; /* Initially hidden */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child divs vertically */
+  gap: 0; /* No gap between child divs */
+  align-items: center;
+  justify-content: center;
+}
+
+.topDivRightPanel {
+  width: 444px; /* Fill the width of RightPanel */
+  height: 44.62px; /* Height of the top div (adjust as necessary) */
+  background: linear-gradient(
+    90deg,
+    #2a47ce 0%,
+    #7028ce 100%
+  ); /* Gradient background */
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.appliedVirtuallyText {
+  width: 166px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  font-weight: 500; /* Font weight */
+  line-height: 30px; /* Line height */
+  text-align: left; /* Text alignment */
+  color: rgba(255, 255, 255, 1); /* Background color */
+}
+
+.lowerDivRightPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 599px; /* Width of the lower div */
+  height: 1030.38px; /* Height of the lower div */
+  left: -10px; /* Positioning from the left */
+  padding: 27px 22px 24.38px 24px; /* Padding */
+  gap: 10px; /* Space between items inside */
+  border-radius: 20px; /* Rounded top left corner */
+  border: 1px solid transparent; /* Border specifications */
+  opacity: 1; /* Initially hidden */
+  position: relative; /* Set position for the lower div */
+  border: 1px solid rgba(216, 216, 216, 1);
+  background-color: rgba(254, 254, 254, 1);
+}
+.lowerRightPanel1 {
+  width: 553px; /* Fixed width for the first child div */
+  height: 347px; /* Fixed height for the first child div */
+  /* padding: 24px 32px 32px 32px; */
+  left: 24px;
+  top: 27px;
+  gap: 32px; /* Space between items inside (if any) */
+  border-radius: 16px; /* Rounded top left corner */
+  background: rgba(255, 255, 255, 1); /* Background color */
+  border: 1.5px solid rgba(216, 216, 216, 1); /* Border specifications */
+  opacity: 1; /* Initially hidden; set to 1 when needed */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Center items horizontally */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  padding: 24px 17px 24px 17px;
+
+}
+.lowerRightPanel2 {
+  width: 515px;
+  height: 62px;
+  gap: 23px;
+  opacity: 1px;
+  gap: 32px; /* Space between items inside (if any) */
+  border-radius: 16px; /* Rounded top left corner */
+  background: rgba(255, 255, 255, 1); /* Background color */
+  opacity: 1; /* Initially hidden; set to 1 when needed */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row;
+  justify-content: space-between;
+}
+.addToCart {
+  width: 211px; /* Fixed width */
+  height: 62px; /* Fixed height */
+  left: 0px;
+  gap: 8px; /* Space between items inside */
+  border-radius: 59px; /* Rounded top left corner */
+  opacity: 1; /* Initially hidden */
+  background: linear-gradient(90deg, #244ACE 0%, #7924CE 100%); /* Gradient background */
+  border: none;
+}
+
+.addToCartText {
+  color:  rgba(255, 255, 255, 1);
+  width: 113px; /* Fixed width for text */
+  height: 30px; /* Fixed height for text */
+  opacity: 1; /* Initially hidden */
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  font-weight: 500; /* Font weight */
+  line-height: 30px; /* Line height */
+}
+.similiarProducts {
+opacity: 1px;
+  width: 281px; /* Fixed width */
+  height: 62px; /* Fixed height */
+  gap: 8px; /* Space between items inside */
+  border-radius: 59px; /* Rounded top left corner */
+  opacity: 1; /* Initially hidden */
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgb(96, 47, 206);
+}
+
+.similiarProductsText {
+  color:   rgb(96, 47, 206);
+  width: 224px; /* Fixed width for text */
+  height: 30px; /* Fixed height for text */
+  opacity: 1; /* Initially hidden */
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  font-weight: 500; /* Font weight */
+  line-height: 30px; /* Line height */
+}
+
+.lowerRightPanel3 {
+  width: 553px;
+  height: 169px;
+  padding: 24px 17px 24px 17px;
+  gap: 24px;
+  border-radius: 14px;
+  border: 1.5px solid rgba(216, 216, 216, 1);
+  opacity: 1px;
+}
+.lowerRightPanel4 {
+  width: 553px;
+  height: 178px;
+  padding: 24px 17px 24px 17px;
+  gap: 24px;
+  border-radius: 14px;
+  /* padding: 24px; */
+  border: 1.5px solid rgba(216, 216, 216, 1);
+  opacity: 1px;
+}
+.panel4Paragraph{
+  position: relative;
+ left: 24px;
+  width: 505px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+gap: 7px;
+
+}
+.panel4Select{
+  margin-left: 18.5px;
+  width: 505px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 42px;
+  color:  rgba(144, 144, 144, 1);
+  border: 1px solid rgba(203, 213, 225, 1);
+  border-radius: 6px;
+}
+.lowerRightPanel5 {
+  width: 553px;
+  height: 127px;
+  padding: 24px 17px 24px 17px;
+  gap: 24px;
+  border-radius: 14px;
+  /* padding: 24px; */
+  border: 1.5px solid rgba(216, 216, 216, 1);
+  opacity: 1px;
+}
+.innerPanel5 {
+  width: 505px; /* Fill width */
+  height: 127px; /* Height hugs the content */
+  gap: 7px; /* Space between items */
+  opacity: 1; /* Initially hidden, change as needed */
+  display: flex; /* Use flexbox for layout */
+  padding: 10px; /* Padding around the content */
+ 
+  border-radius: 16px; /* Rounded corners */
+  display: flex;
+  flex-direction: column; /* Stack heading and list vertically */
+  text-align: left;
+}
+
+.panel5Heading {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-style: normal; /* Font family */
+  font-size: 16px; /* Font size for heading */
+  font-weight: 600; /* Font weight for heading */
+  color: rgba(0, 0, 0, 0.87); /* Color for heading text */
+  line-height: 24px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  left: 0;
+}
+
+.panel5Content {
+  position: relative;
+  font-weight: 500; /* Font weight for heading */
+  opacity: 1; /* Make visible when needed */
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+color: rgba(29, 54, 77, 1);
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+
