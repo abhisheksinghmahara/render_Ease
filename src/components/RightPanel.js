@@ -37,7 +37,7 @@ const RightPanel = () => {
           <div className={styles.panel1bottom}>
             <div className={styles.colourOuterDiv}>
               <p className={styles.colourText}>Colours</p>
-              <div className={styles.panel3EmojiDiv}>
+              <div className={styles.panel1colorDiv} >
                 <span
                   className={styles.emojiBox}
                   style={{
@@ -119,16 +119,16 @@ const RightPanel = () => {
             </span>
           </div>
         </div>
-
+  {/* panel4  */}
         <div className={styles.lowerRightPanel4}>
           <p className={styles.panel4Paragraph}>
             Where are you in your buying journey?
           </p>
           <select className={styles.panel4Select}>
-            <option value="option1">Select an option</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
+            <option value="option1" className={styles.optionsofPanel4}>Select an option</option>
+            <option value="option2" className={styles.optionsofPanel4}>Option 2</option>
+            <option value="option3" className={styles.optionsofPanel4}>Option 3</option>
+            <option value="option4"className={styles.optionsofPanel4}>Option 4</option>
           </select>
         </div>
 
