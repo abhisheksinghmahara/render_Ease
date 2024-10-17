@@ -286,7 +286,6 @@
   opacity: 1; /* Initially hidden */
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack child divs vertically */
-  gap: 0; /* No gap between child divs */
   align-items: center;
   justify-content: center;
 }
@@ -325,10 +324,9 @@
   width: 599px; /* Width of the lower div */
   height: 1030.38px; /* Height of the lower div */
   left: -10px; /* Positioning from the left */
-  padding: 27px 22px 24.38px 24px; /* Padding */
-  gap: 10px; /* Space between items inside */
+  padding: 27px 22px 24.38px 24px;
+  gap: 10px;
   border-radius: 20px; /* Rounded top left corner */
-  opacity: 1; /* Initially hidden */
   position: relative; /* Set position for the lower div */
   border: 1px solid rgba(216, 216, 216, 1);
   background-color: rgba(254, 254, 254, 1);
@@ -336,97 +334,94 @@
 .lowerRightPanel1 {
   width: 553px; /* Fixed width for the first child div */
   height: 347px; /* Fixed height for the first child div */
-  /* padding: 24px 32px 32px 32px; */
-  /* left: 24px; */
-  /* top: 27px; */
   border-radius: 16px; /* Rounded top left corner */
   background: rgba(255, 255, 255, 1); /* Background color */
   border: 1.5px solid rgba(216, 216, 216, 1); /* Border specifications */
-  opacity: 1; /* Initially hidden; set to 1 when needed */
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack content vertically */
   justify-content: flex-start; /* Align items to the start */
   align-items: center; /* Center items horizontally */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  /* padding: 24px 17px 24px 17px; */
-} 
-.panel1upper{
+}
+.panel1upper {
   width: 489px;
   height: 48px;
   display: flex;
-/* border: 1px solid black; */
-justify-content: space-between;
-margin-top: 24px;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  margin-top: 24px;
 }
-.upper1text{
+.upper1text {
   width: 269px;
   height: 48px;
-/* border: 1px solid black; */
-font-family: "Poppins";
-font-size: 32px;
-font-weight: 600;
-line-height: 48px;
-text-align: left;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
 }
-.upper1btnbox{
+.upper1btnbox {
   /* border: 1px solid blueviolet; */
   /* width: 220px; */
   height: 48px;
   display: flex;
   align-items: center;
-  
 }
-.btnsdivatRightest{
+.btnsdivatRightest {
   width: 92px;
   height: 34px;
-  /* gap: 13px;  */
-  /* border:1px solid #a7d717;   */
   display: flex;
   justify-content: space-between;
 }
-.btnLoveAndShare{
+.btnLoveAndShare {
+  background-color: inherit;
   cursor: pointer;
-  /* border: 1px solid  rgb(96, 47, 206);  */
   border-radius: 10px;
+  border: 1px solid rgb(69, 60, 207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.panel1bottom{
-  /* border: 1px solid blue; */
+.panel1bottom {
   width: 489px;
-height: 219px;
-margin-top: 24px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
+  height: 219px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.colourOuterDiv{
-  /* border: 1px solid black; */
+.colourOuterDiv {
   width: 489px;
   height: 113px;
-  
 }
-.colourText{
-  /* border: 1px solid red; */
+.colourText {
   width: 376px;
   height: 24px;
   font-family: "Poppins";
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-margin-top: 0px;
-padding-top: 0px;
-
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 0px;
 }
-.productDetailBtnDiv{
+.panel1colorDiv {
+  width: 519px;
+  height: 65px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px; /* This will set 24px distance between each emoji box */
+}
+.productDetailBtnDiv {
   width: 287px;
   height: 84px;
   /* border: 1px solid black; */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.productDetailBtn{
+.productDetailBtn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -437,22 +432,25 @@ padding-top: 0px;
   left: 0px;
   gap: 8px; /* Space between items inside */
   border-radius: 59px; /* Rounded top left corner */
-  background: linear-gradient(90deg, #244ACE 0%, #7924CE 100%); /* Gradient background */
+  background: linear-gradient(
+    90deg,
+    #244ace 0%,
+    #7924ce 100%
+  ); /* Gradient background */
   border: none;
- display: block; 
+  display: block;
 }
 .productDetailText {
   cursor: pointer;
-  color:  rgba(255, 255, 255, 1);
-  width: 113px; /* Fixed width for text */
-  height: 30px; /* Fixed height for text */
-  opacity: 1; /* Initially hidden */
-  font-family: "Poppins", sans-serif; /* Font family */
-  font-size: 20px; /* Font size */
-  font-weight: 500; /* Font weight */
-  line-height: 30px; /* Line height */
+  color: rgba(255, 255, 255, 1);
+  width: 113px;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
 }
-.productDetailLogo{
+.productDetailLogo {
   margin-left: 12px;
   width: 21px;
   height: 20px;
@@ -460,13 +458,10 @@ padding-top: 0px;
 .lowerRightPanel2 {
   width: 515px;
   height: 62px;
-  gap: 23px;
-  opacity: 1px;
-  gap: 32px; /* Space between items inside (if any) */
-  border-radius: 16px; /* Rounded top left corner */
-  background: rgba(255, 255, 255, 1); /* Background color */
-  opacity: 1; /* Initially hidden; set to 1 when needed */
-  display: flex; /* Use flexbox for layout */
+  gap: 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -475,70 +470,69 @@ padding-top: 0px;
   width: 211px; /* Fixed width */
   height: 62px; /* Fixed height */
   left: 0px;
-  gap: 8px; /* Space between items inside */
   border-radius: 59px; /* Rounded top left corner */
-  opacity: 1; /* Initially hidden */
-  background: linear-gradient(90deg, #244ACE 0%, #7924CE 100%); /* Gradient background */
+  background: linear-gradient(
+    90deg,
+    #244ace 0%,
+    #7924ce 100%
+  ); /* Gradient background */
   border: none;
 }
 
 .addToCartText {
   cursor: pointer;
-  color:  rgba(255, 255, 255, 1);
-  width: 113px; /* Fixed width for text */
-  height: 30px; /* Fixed height for text */
-  opacity: 1; /* Initially hidden */
-  font-family: "Poppins", sans-serif; /* Font family */
-  font-size: 20px; /* Font size */
-  font-weight: 500; /* Font weight */
-  line-height: 30px; /* Line height */
+  color: rgba(255, 255, 255, 1);
+  width: 113px;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
 }
 .similiarProducts {
   cursor: pointer;
-opacity: 1px;
-  width: 281px; /* Fixed width */
-  height: 62px; /* Fixed height */
-  gap: 8px; /* Space between items inside */
-  border-radius: 59px; /* Rounded top left corner */
-  opacity: 1; /* Initially hidden */
+  opacity: 1px;
+  width: 281px;
+  height: 62px;
+  border-radius: 59px;
   background-color: rgba(255, 255, 255, 1);
   border: 2px solid rgb(96, 47, 206);
 }
 
 .similiarProductsText {
-  color:   rgb(96, 47, 206);
+  color: rgb(96, 47, 206);
   width: 224px; /* Fixed width for text */
   height: 30px; /* Fixed height for text */
-  opacity: 1; /* Initially hidden */
   font-family: "Poppins", sans-serif; /* Font family */
   font-size: 20px; /* Font size */
   font-weight: 500; /* Font weight */
   line-height: 30px; /* Line height */
 }
 .lowerRightPanel3 {
+  justify-content: center;
   width: 553px;
   height: 169px;
-  padding: 24px 17px 24px 17px;
   gap: 24px;
   border-radius: 14px;
   border: 1.5px solid rgba(216, 216, 216, 1);
-  opacity: 1;
 }
 
 .panel3Text {
-  left: 17px;
+  padding-left: 17px;
   width: 519px;
   height: 24px;
-  font-family: 'Poppins', sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-  gap: 7px;
-  opacity: 1;
 }
 
 .panel3EmojiDiv {
+  padding-left: 17px;
   width: 519px;
   height: 65px;
   display: flex;
@@ -554,55 +548,51 @@ opacity: 1px;
   height: 65px;
   border-radius: 32.5px;
   border: 1px solid rgb(96, 47, 206);
-  opacity: 1; /* Set to 1 to make it visible */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
 .lowerRightPanel4 {
   width: 553px;
   height: 178px;
-  padding: 24px 17px;
-  /* gap: 24px; */
   border-radius: 14px;
-  /* padding: 24px; */
   border: 1.5px solid rgba(216, 216, 216, 1);
-  opacity: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0px;
 }
-.panel4Paragraph{
- left: 7px;
+.panel4Paragraph {
   width: 505px;
   height: 24px;
   font-family: "Poppins", sans-serif;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-gap: 7px;
-
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
-.panel4Select{
-  top: 24px;
+.optionsofPanel4{
   margin-left: 18.5px;
+}
+.panel4Select {
   width: 505px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   height: 42px;
-  color:  rgba(144, 144, 144, 1);
+  color: rgba(144, 144, 144, 1);
   border: 1px solid rgba(203, 213, 225, 1);
   border-radius: 6px;
 }
-.panel4Select:focus{
+.panel4Select:focus {
   outline: none;
 }
 .lowerRightPanel5 {
   width: 553px;
   height: 127px;
-  padding: 24px;
   gap: 24px;
   border-radius: 14px;
   border: 1.5px solid rgba(216, 216, 216, 1);
@@ -612,21 +602,19 @@ gap: 7px;
   justify-content: center;
 }
 .innerPanel5 {
-  /* border: 1px solid black; */
   width: 505px; /* Fill width */
   height: 79px; /* Height hugs the content */
-  gap: 7px; /* Space between items */
   opacity: 1; /* Initially hidden, change as needed */
   display: flex; /* Use flexbox for layout */
   border-radius: 16px; /* Rounded corners */
   flex-direction: column; /* Stack heading and list vertically */
-  text-align: left;  
+  text-align: left;
 }
 
 .panel5Heading {
   font-family: "Poppins", sans-serif;
-font-weight: 500;
-font-style: normal; /* Font family */
+  font-weight: 500;
+  font-style: normal; /* Font family */
   font-size: 16px; /* Font size for heading */
   font-weight: 600; /* Font weight for heading */
   color: rgba(0, 0, 0, 0.87); /* Color for heading text */
@@ -639,47 +627,46 @@ font-style: normal; /* Font family */
   position: relative;
   font-weight: 500; /* Font weight for heading */
   opacity: 1; /* Make visible when needed */
-font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-line-height: 21px;
-color: rgba(29, 54, 77, 1);
-font-family: "Poppins", sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(29, 54, 77, 1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.footerforlogo{
+.footerforlogo {
   background-color: transparent;
   position: absolute;
-  width:175.87px;
-height:56.71px;
-top: 1132px;
-left: 872px;
-/* border: 1px solid black; */
+  width: 175.87px;
+  height: 56.71px;
+  top: 1132px;
+  left: 872px;
+  /* border: 1px solid black; */
 }
-.poweredByText{
+.poweredByText {
   background-color: transparent;
   width: 175.87px;
-height: 20px;
-/* border: 1px solid rgb(201, 30, 30); */
-text-align: center;
-font-family: "Be Vietnam Pro";
-font-size: 12px;
-font-weight: 500;
-line-height: 20px;
-text-align: center;
-color: rgba(118, 117, 117, 1);
-
+  height: 20px;
+  /* border: 1px solid rgb(201, 30, 30); */
+  text-align: center;
+  font-family: "Be Vietnam Pro";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(118, 117, 117, 1);
 }
- .logoDivRenderEase{
+.logoDivRenderEase {
   width: 175.87px;
-height: 36.71px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: transparent;
-align-items: top;
+  height: 36.71px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: top;
 } /*
 .companylogoBox{
   display: flex;
