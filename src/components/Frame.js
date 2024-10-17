@@ -6,9 +6,15 @@ import arIcon from "../assets/viewInARImg.svg";
 import zoomInIcon from '../assets/zoom-in.svg';
 import zoomOutIcon from '../assets/zoom-out.svg';
 import screenIcon from '../assets/screenView.svg';
+// import RenderEaseLogo from '../assets/RenderEaseLogo.svg';
+import RenderEaseLogo from '../assets/rendereaselogo.webp';
+// import companylogoText from '../assets/RenderEase TextLogo.svg';
+// import InsiderRenderEaseLogo from '../assets/InsiderRenderEaseLogo.svg';
+
 const Frame = () => {
   return (
     <div className={styles.frame}>
+
       <div className={styles.crossButton}>
         <div className={styles.innerBox}>
           <svg width="44" height="44">
@@ -72,6 +78,23 @@ const Frame = () => {
 
         <RightPanel />
       </div>
+      {/* footer  */}
+      <footer className={styles.footerforlogo} >
+        <div className={styles.poweredByText} >
+          Powered by
+        </div>
+      <div className={styles.logoDivRenderEase}>
+        <img src={RenderEaseLogo} alt="company-logo" />
+        {/* <div className={styles.logoDivRenderEase}>
+          <div className={styles.companylogoBox} >
+            <img src={RenderEaseLogo} alt="company-logo"/ >
+          </div>
+          <div className={styles.companylogoText}>
+            <img src={companylogoText} className={styles.companylogoText} alt="companylogoText"/>
+          </div >
+        </div> */}
+        </div> 
+      </footer>
     </div>
   );
 };
