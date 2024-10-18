@@ -20,19 +20,19 @@ const LeftPanel = () => {
             {/* Featured buttons div */}
             <div className={styles.featuredButtons}>
                 <button className={styles.featuredButton}>
-                    <img src={threeDBtnImg} className={styles.threeDBtn} alt="Button Icon" style={{ width: '100%', height: '100%' }} />
+                    <img src={threeDBtnImg} className={styles.threeDBtn} alt="Button Icon"  />
                 </button>
                 <button className={styles.featuredButton}>
-                <img src={scalingImg} className={styles.scalingImg} alt="Button Icon" style={{ width: '100%', height: '100%' }} />
+                <img src={scalingImg} className={styles.scalingImg} alt="Button Icon"  />
                 </button>
                 <button className={styles.featuredButton}>
-                <img src={locationBtn} className={styles.locationBtn} alt="Button Icon" style={{ width: '100%', height: '100%' }} />
+                <img src={locationBtn} className={styles.locationBtn} alt="Button Icon"  />
                 </button>
                 <button className={styles.featuredButton}>
-                <img src={playBtn} className={styles.playBtn} alt="Button Icon" style={{ width: '100%', height: '100%' }} />
+                <img src={playBtn} className={styles.playBtn} alt="Button Icon" />
                 </button>
                 <button className={styles.featuredButton}>
-                <img src={playBtn} className={styles.playBtn} alt="Button Icon" style={{ width: '100%', height: '100%' }} />
+                <img src={playBtn} className={styles.playBtn} alt="Button Icon"  />
                 </button>
                 <button className={styles.featuredButton}></button>
                 <button className={styles.featuredButton}></button>

@@ -15,6 +15,7 @@ const Frame = () => {
   return (
     <div className={styles.frame}>
 
+{/* cross button  */}
       <div className={styles.crossButton}>
         <div className={styles.innerBox}>
           <svg width="44" height="44">

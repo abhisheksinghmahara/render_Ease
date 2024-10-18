@@ -122,49 +122,30 @@
 }
 
 .threeDBtn {
-  width: 48.63px; /* Width of the button */
-  height: 42px; /* Height of the button */
   gap: 0; /* No gap */
   opacity: 1; /* Make the button visible */
   background: transparent; /* Background color */
   cursor: pointer; /* Pointer cursor on hover */
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  transition: opacity 0.3s; /* Smooth opacity transition */
+
 }
 .scalingImg {
-  width: 32.3px;
-  height: 42px;
-  gap: 0; /* No gap */
+  width: 32.4px;
   opacity: 1; /* Make the button visible */
   background: transparent; /* Background color */
   cursor: pointer; /* Pointer cursor on hover */
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
 }
 .locationBtn {
-  width: 42px;
-  height: 42px;
   gap: 0; /* No gap */
   opacity: 1; /* Make the button visible */
   background: transparent; /* Background color */
   cursor: pointer; /* Pointer cursor on hover */
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+
 }
 .playBtn {
-  width: 42px;
-  height: 42px;
   gap: 0; /* No gap */
   opacity: 1; /* Make the button visible */
   background: transparent; /* Background color */
   cursor: pointer; /* Pointer cursor on hover */
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
 }
 
 .middleContainer {
@@ -319,12 +300,12 @@
 .lowerDivRightPanel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 599px; /* Width of the lower div */
   height: 1030.38px; /* Height of the lower div */
   left: -10px; /* Positioning from the left */
-  padding: 27px 22px 24.38px 24px;
+  padding: 25px 0px 25px 0px;
   gap: 10px;
   border-radius: 20px; /* Rounded top left corner */
   position: relative; /* Set position for the lower div */
@@ -516,7 +497,6 @@
   border-radius: 14px;
   border: 1.5px solid rgba(216, 216, 216, 1);
 }
-
 .panel3Text {
   padding-left: 17px;
   width: 519px;
@@ -563,7 +543,6 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 0px;
 }
 .panel4Paragraph {
   width: 505px;
@@ -572,69 +551,58 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  text-align: left;
+  text-align: left; 
+  /* margin-top: 44px; */
+
 }
-.optionsofPanel4{
-  margin-left: 18.5px;
-}
+
 .panel4Select {
   width: 505px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 500;
   height: 42px;
   color: rgba(144, 144, 144, 1);
   border: 1px solid rgba(203, 213, 225, 1);
   border-radius: 6px;
+  padding-left: 18.5px;
 }
 .panel4Select:focus {
   outline: none;
 }
+
 .lowerRightPanel5 {
   width: 553px;
   height: 127px;
-  gap: 24px;
   border-radius: 14px;
   border: 1.5px solid rgba(216, 216, 216, 1);
-  opacity: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .innerPanel5 {
-  width: 505px; /* Fill width */
-  height: 79px; /* Height hugs the content */
-  opacity: 1; /* Initially hidden, change as needed */
-  display: flex; /* Use flexbox for layout */
-  border-radius: 16px; /* Rounded corners */
-  flex-direction: column; /* Stack heading and list vertically */
-  text-align: left;
+  width: 505px; 
+  height: 79px; 
+  margin: 24px;
 }
 
 .panel5Heading {
+
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal; /* Font family */
   font-size: 16px; /* Font size for heading */
-  font-weight: 600; /* Font weight for heading */
   color: rgba(0, 0, 0, 0.87); /* Color for heading text */
   line-height: 24px;
-  text-align: left;
-  left: 0;
+  /* text-align: left; */
+  padding-left: 0px;
+ align-items: center;
 }
 
 .panel5Content {
-  position: relative;
-  font-weight: 500; /* Font weight for heading */
-  opacity: 1; /* Make visible when needed */
-  font-family: Poppins;
+  margin-left: -18px;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
-  color: rgba(29, 54, 77, 1);
+  color: rgba(0, 0, 0, 0.87);
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+ align-items: center;
 }
 
 .footerforlogo {
@@ -644,6 +612,8 @@
   height: 56.71px;
   top: 1132px;
   left: 872px;
+ text-align: left;
+
   /* border: 1px solid black; */
 }
 .poweredByText {
