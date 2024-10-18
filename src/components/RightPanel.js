@@ -135,10 +135,13 @@ const RightPanel = () => {
         <div className={styles.lowerRightPanel5}>
           <div className={styles.innerPanel5}>
             <span className={styles.panel5Heading}>Tips to get best view:</span>
-            <ul className={styles.panel5Content}>
-              <li>Adequate Lighting</li>
+           
+         <ul className={styles.panel5Content} > 
+
+              <li > Adequate Lighting</li>
               <li>Fast and Stable Internet</li>
-            </ul>
+         </ul>
+            
           </div>
         </div>
       </div>
